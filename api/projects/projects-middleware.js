@@ -1,5 +1,4 @@
 // add middlewares here related to projects
-
 const { get } = require('./projects-model')
 
 function validateId(req, res, next) {
@@ -29,8 +28,10 @@ function validateProject(req, res, next) {
 }
 
 function validateCompleted(req, res, next) {
-    if(req.body.completed !== true && req.body.completed !== false) {
-        res.status(400).json({ message: 'Needs completed y/n' });
+    if(req.body.completed !== true && 
+       req.body.completed !== false) {
+            res.status(400).json({ 
+                message: 'you must decide, completed or not!' });
     } else {
         next();
     }

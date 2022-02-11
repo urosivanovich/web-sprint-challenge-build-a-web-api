@@ -1,13 +1,13 @@
 // Write your "projects" router here!
-const express = require("express");
-const router = express.Router();
+const express = require("express")
+const router = express.Router()
 
-const Projects = require('./projects-model');
+const Projects = require('./projects-model')
 
 const { 
     validateId, 
     validateProject, 
-    validateCompleted } = require('./projects-middleware');
+    validateCompleted } = require('./projects-middleware')
 
  
 
@@ -41,8 +41,8 @@ router.put('/:id', validateId,  validateProject, validateCompleted, (req, res, n
 
 router.delete('/:id', validateId, (req, res, next) => {
     Projects.remove(req.params.id)
-    .then(destroyed => {
-        res.status(200).json(destroyed)
+    .then(destroy => {
+        res.status(200).json(destroy)
     })
     .catch(next)
 })

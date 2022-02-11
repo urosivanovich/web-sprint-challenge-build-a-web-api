@@ -1,4 +1,3 @@
-// add middlewares here related to projects
 const { get } = require('./projects-model')
 
 function validateId(req, res, next) {
@@ -36,8 +35,6 @@ function validateCompleted(req, res, next) {
         next();
     }
 }
-
-
 
 
 module.exports = {

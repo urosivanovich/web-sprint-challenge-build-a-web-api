@@ -147,7 +147,17 @@ We have provided test data for all the resources.
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
-1. Understand and explain the use of Middleware.
-1. The basic principles of the REST architectural style.
-1. Understand and explain the use of Express Routers.
-1. Describe tooling used to manually test the correctness of an API.
+• The core feature od Node.js is to use JavaScript outside of the browser and it's useful for creating all kinds of server-side tools and applications in JavaScript
+• Express is the most popular free and open-source web application framework for Node.js. While itself is light and minimalist it has a lot of compatible middleware packages to address problems.
+
+2. Understand and explain the use of Middleware.
+• Middleware are functions that execute during lifecycle of a request to the server. Very useful tools to make our code dry. 
+
+3. The basic principles of the REST architectural style.
+• When designing a RESTful Web API everything is resource  and each one of them has his own URI (Uniform Resource Identifier) Resources can have multiple representations and communication happens over a stateless protocol (HTTP) Resource management happens via HTTP methods.
+
+4. Understand and explain the use of Express Routers.
+• Routers refers to how an application's endpoints respond to client requests. Very useful for organizing and maintaining multiple endpoints  that one application can have.
+
+5. Describe tooling used to manually test the correctness of an API.
+• Postman, Insomnia, Httpie are among the most popular tools used in API testing. These tools allow full control when making requests.

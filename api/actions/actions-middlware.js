@@ -1,4 +1,3 @@
-// add middlewares here related to actions
 const { get } = require('./actions-model')
 
 function validateId(req, res, next){

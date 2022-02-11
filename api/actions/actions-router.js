@@ -1,4 +1,3 @@
-// Write your "actions" router here!
 const router = require('express').Router()
 
 const Actions = require('./actions-model')
@@ -6,7 +5,7 @@ const {
      validateId, 
      validateAction, 
      validateCompleted } = require('./actions-middlware')
-
+     
 
 router.get('/', (req, res, next) => {
     Actions.get()
